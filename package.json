@@ -1,19 +1,33 @@
 {
-  "name": "assignment7",
+  "name": "music-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A RESTful API for managing a music library built with Node.js, Express.js, and Sequelize ORM using SQLite database.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "setup": "node database/setup.js",
+    "seed": "node database/seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "dotenv": "^17.1.0",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpmitmpr/Assignment7_MusicORM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jpmitmpr/Assignment7_MusicORM/issues"
+  },
+  "homepage": "https://github.com/jpmitmpr/Assignment7_MusicORM#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
